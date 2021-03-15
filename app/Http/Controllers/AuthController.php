@@ -18,7 +18,7 @@ class AuthController extends Controller {
       return Redirect::back()->withErrors(['Данная почта незарегистрирована'])->withInput();
     $credentials = $request->only('email', 'password');
 
-    if (Auth::attempt($credentials)) {
+    if (Auth::attempt($credentials, true)) {
       return redirect()->intended(route('products.index'));
     } else {
       return Redirect::back()->withErrors(['Неверный пароль'])->withInput();

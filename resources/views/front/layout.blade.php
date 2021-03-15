@@ -16,7 +16,7 @@
   <div id="app" class="d-flex flex-column">
     @include('front.static.header')
     @include('front.static.menu')
-    <div class="flex-fill">
+    <div class="flex-fill content">
       @yield('content')
     </div>
     @include('front.static.footer')

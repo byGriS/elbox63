@@ -53,6 +53,7 @@ a:hover {
   display: block;
 }
 
+
 /*** END Tabs ***/
 
 
@@ -101,7 +102,7 @@ a:hover {
 
 .menu {
   font-size: 0.9rem;
-  background: #0845a0;
+  background: #12578b;
   color: #eee;
   height: 3rem;
 }
@@ -136,7 +137,7 @@ a:hover {
 
 .footer {
   font-size: 0.9rem;
-  background: #0845a0;
+  background: #12578b;
   color: #eee;
 }
 
@@ -350,8 +351,27 @@ a:hover {
 
 
 /*********** FRONT *************/
+
+
+/*** Breadcrumb ***/
+
+.breadcrumb {
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+/*** END Breadcrumb ***/
+
+
 /*** Catalog ***/
-.catalog .product{
+
+.catalog .product {
   border: 1px solid #999;
   border-radius: 3px;
   padding: 5px 15px;
@@ -361,19 +381,81 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-.catalog .product:hover{
+
+.catalog .product:hover {
   border-color: #444;
 }
-.catalog .product .title{
+
+.catalog .product .title {
   margin: 5px;
   line-height: 1rem;
 }
-.catalog .product img{
+
+.catalog .product img {
   width: 100%;
   margin: 5px 0;
+}
 
+.catalog .product .btn:hover {
+  background: #12578b;
 }
-.catalog .product .btn:hover{
-  background: #0845a0;
-}
+
 /*** END Catalog ***/
+
+
+/*** Sidebar ***/
+
+.content .sidebar {
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.sidebar-catalog .title {
+  background: #12578b;
+  color: #eee;
+  text-align: center;
+  padding: 5px;
+}
+
+.sidebar-catalog a {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #999;
+  margin: 5px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #666;
+}
+.sidebar-catalog a:hover{
+  text-decoration: none;
+}
+
+.sidebar-catalog a:last-child{
+  border: none;
+}
+
+/*** END Sidebar ***/
+
+/*** Product ***/
+.product{
+  margin: 15px;
+}
+.product .photos{
+  height: 400px;
+}
+.product .photos img{
+  max-width: 100% !important;
+  height: auto !important;
+}
+.product table{
+  width: 100%;
+  font-size: 0.9rem;
+}
+.product table td{
+  border: 1px solid #aaa;
+  padding: 5px;
+}
+.product table tr:nth-child(2n-1){
+  background: #ccc;
+}
+/*** END Product ***/

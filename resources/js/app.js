@@ -20,6 +20,7 @@ import BtnDelete from './components/common/btnDelete';
 import InputPhotos from './components/common/InputPhotos'
 import TextareaEditor from './components/common/textareaEditor';
 import ProductsIndex from './components/products/index';
+import Slider from './components/common/slider';
 
 const app = new Vue({
   el: '#app',
@@ -28,5 +29,6 @@ const app = new Vue({
     InputPhotos,
     TextareaEditor,
     ProductsIndex,
+    Slider,
   }
 })

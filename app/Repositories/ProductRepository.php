@@ -20,7 +20,7 @@ class ProductRepository extends BaseRepository {
   }
 
   public function getList() {
-    $result = $this->model->select('id', 'title')->orderBy('title', 'asc')->get();
+    $result = $this->model->select('id', 'title', 'slug')->orderBy('title', 'asc')->get();
     return $result;
   }
 
@@ -31,6 +31,11 @@ class ProductRepository extends BaseRepository {
 
   public function getByIdWithData($id) {
     $result = $this->model->whereId($id)->first();
+    return $result;
+  }
+
+  public function getBySlug($slug){
+    $result = $this->model->whereSlug($slug)->first();
     return $result;
   }
 
